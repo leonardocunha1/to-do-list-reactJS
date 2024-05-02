@@ -16,7 +16,7 @@ export default function Footer({ task }) {
     <footer>Você concluiu toda(s) as {lengthTask} tarefa(s). Parabens!</footer>
   ) : (
     <footer>
-      Você tem {lengthTask} tarefa(s) e {lengthTaskCompleted} (
+      Você têm {lengthTask} tarefa(s) e {lengthTaskCompleted} (
       {percentageTaskCompleted}%) já foram concluída(s)
     </footer>
   );
