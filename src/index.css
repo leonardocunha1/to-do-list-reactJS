@@ -1,0 +1,220 @@
+:root {
+    --italian-1: #D4C2AD;
+    --italian-2: #D7A184;
+    --italian-3: #EFDFCC;
+    --italian-4: #BA8E7A;
+    --italian-5: #66796B;
+    --cor: #464959;
+    --background: #f0f0f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background);
+    width: 100%;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Header */
+
+.title {
+    text-align: center;
+    font-size: 7rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    color: var(--italian-3);
+    padding: 2rem 0;
+    background-color: var(--italian-5);
+}
+
+/* Área do shape-divider */
+
+.custom-shape-divider-top-1714657111 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    margin-top: -13px;
+}
+
+.custom-shape-divider-top-1714657111 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 79px;
+}
+
+.custom-shape-divider-top-1714657111 .shape-fill {
+    fill: #66796B;
+}
+
+/* Área do formulário */
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid var(--italian-5);
+    background-color: var(--background);
+    font-size: 1.8rem;
+    color: #333;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.btn-add {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--italian-5);
+    color: var(--italian-3);
+    font-size: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-add:hover {
+    background-color: var(--italian-4);
+}
+
+input:focus {
+    background-color: #dfdfdf;
+    text-align: center;
+}
+
+/* Área das tarefas */
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    flex: 1;
+}
+
+/* Ordenação e botão reset */
+.task-options {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.btn-reset {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: var(--italian-5);
+    color: var(--italian-3);
+    font-size: 2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: pulse 2s infinite;
+}
+
+.btn-reset:hover {
+    background-color: var(--italian-4);
+}
+
+/*  Fazendo um efeito do botão ter uma sombra que fica piscando */
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(102, 121, 107, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(102, 121, 107, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(102, 121, 107, 0);
+    }
+
+}
+
+select {
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    border: 2px solid var(--italian-5);
+    border-radius: 0.5rem;
+    background-color: var(--italian-5);
+    color: var(--italian-3);
+}
+
+/* Tarefas */
+
+li {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.checkbox {
+    width: 2rem;
+    height: 2rem;
+}
+
+.task {
+    font-size: 1.6rem;
+    color: var(--cor);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: var(--italian-2);
+}
+
+.btn-lixeira {
+    font-size: 1.8rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button img {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Footer */
+
+footer {
+    padding: 3rem 0;
+    background-color: var(--italian-1);
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
