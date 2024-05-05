@@ -2,6 +2,13 @@
 
 Uma aplicação simples de lista de tarefas (to-do list) construída com React. Os usuários podem adicionar, editar, marcar como concluído e remover tarefas. A aplicação é hospedada no Netlify e pode ser acessada [aqui](https://to-do-list-react-leonardo.netlify.app/).
 
+## Prints do projeto
+
+<img src="https://iili.io/JrFan0N.png" alt="Descrição da Imagem" width="700px">
+<img src="https://iili.io/JrFc0Cv.png" alt="Descrição da Imagem" width="700px">
+
+
+
 ## Funcionalidades
 
 - Adicionar uma nova tarefa com um nome e descrição.
@@ -17,6 +24,7 @@ Uma aplicação simples de lista de tarefas (to-do list) construída com React. 
 3. Clique no botão "Adicionar" para incluir a tarefa na lista.
 4. Para editar ou excluir uma tarefa, use os botões apropriados ao lado de cada item.
 5. Para marcar uma tarefa como concluída, clique na checkbox ao lado da tarefa.
+6. Para alterar a ordenação das tarefas, clique no select 'Como você quer ordenar as tarefas e escolha as opções'
 
 ## Tecnologias Utilizadas
 
